@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta tags, title, and linking to external CSS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Web Page</title>
+    <title>Megan-Huckabay</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <style>
     .section-container {
-        border: 2px solid #000; /* This sets a black border with 2px width */
-        padding: 15px; /* This adds some padding inside the box */
-        margin-bottom: 20px; /* This adds some space between sections */
+        border: 1px solid #000;
+        /* This sets a black border with 2px width */
+        padding: 10px;
+        /* This adds some padding inside the box */
+        margin-bottom: 15px;
+        /* This adds some space between sections */
     }
 </style>
 
-
-<header>
-    <h1>Megan Huckabay</h1>
-    <h3>"Go confidently in the direction of your dreams. Live the life you have imagined."</h3>
-           
-</header>
 <body>
- 
-    <h2>Please Click on the button of <b>YOUR</b> choice to get to know me!!</h2>
-    <div class= "button-container">
-         <!-- Add more buttons for other topics as needed -->
-        
+    <!-- Content of the webpage -->
+    <header>
+        <h1>Megan Huckabay</h1>
+        <mark>
+            <h3>"Go confidently in the direction of your dreams. Live the life you have imagined."</h3>
+        </mark>
+        <h2>Please Click on the button of <b>YOUR</b> choice to get to know me!!</h2>
+    </header>
+    <!-- Sections with unique IDs -->
+    <div class="button-container">
+
+
         <button onclick="scrollToSection('aboutMe')">About Me!</button>
         <button onclick="scrollToSection('education')">Education!</button>
         <button onclick="scrollToSection('experiance')">Experiance!</button>
@@ -35,42 +41,129 @@
         <button onclick="scrollToSection('skills')">Skills!</button>
         <button onclick="scrollToSection('dreamJob')">Dream Jobs!</button>
         <button onclick="scrollToSection('future')">Future Me!</button>
-    </div>    
-
+    </div>
+    <!-- About Me content -->
     <div class="section-container">
         <section id="aboutMe">
             <h1>About Megan Huckabay</h1>
             <p>
                 Greetings! I'm <b>Megan Huckabay,</b> but you can simply call me Meg.<br>
-                At 33 years young, I've crafted this dynamic web experience to showcase my skills in HTML and CSS, I will also be using React.js.<br>
-                For those curious souls eager to delve deeper, I've woven a tapestry of intriguing buttons for you to explore, unveiling facts about who I am.<br>
-                If you believe there's a question deserving a spot here, I'm all ears for suggestions all you have to do is send me an Email which you can find at the bottom of the page.<br>
+                At 33 years young, I've crafted this dynamic web experience to showcase my skills in HTML and CSS, I
+                will also be using React.js.<br>
+                For those curious souls eager to delve deeper, I've woven a tapestry of intriguing buttons for you to
+                explore, unveiling facts about who I am.<br>
+                If you believe there's a question deserving a spot here, I'm all ears for suggestions all you have to do
+                is send me an Email which you can find at the bottom of the page.<br>
                 Now, feel free to embark on your own journey by clicking through these captivating buttons.
             </p>
-        </section> 
+        </section>
     </div>
-
+    <!-- Education content -->
     <div class id="section-container">
         <section id="education">
-            <h2>Full-Stack Software Engineer</h2>
-            <p><b>Bloomtech Coding Bootcamp</b>February 2023 - October 2023</p>  
+            <h1>Full-Stack Software Engineer</h1>
+            <p><b>Bloomtech Institute of Technology</b><br>February 2023 - October 2023</p>
 
             <p>
-                Graduated with proficiency in front-end and back-end development, including proficiency in technologies such as HTML, CSS, JavaScript,and database management.
+                Graduated with proficiency in front-end and back-end development, including technologies such as HTML,
+                CSS, JavaScript, and database management.
             </p>
 
             <p>
                 <b>GCA (General Coding Assessment)</b><br>
                 Score: 706<br>
-                Successfully achieved on the second attempt,demonstrating adaptability and persistence in overcoming challenges.
+                Successfully achieved on the second attempt, demonstrating adaptability and persistence in overcoming
+                challenges.
+            </p>
+
+            <p>
+                As a recent graduate, I am excited to apply the skills and knowledge I've gained at Bloomtech Institute
+                of Technology to real-world projects. I am eager to contribute to innovative teams and create meaningful
+                solutions. My adaptability and persistence, as demonstrated in my GCA achievement, drive my commitment
+                to continuous learning and growth in the field of software engineering.
             </p>
         </section>
     </div>
 
+    <!-- Projects content -->
+    <div class="section-container">
+        <section id="projects">
+            <h1>Personal Projects!</h1>
 
+            <a href="https://github.com/meggers1990/Cheesy-Situation.git">Github Repository</a>
+            <p>
+                This Project is mainly HTML and CSS.<br>
+                It's kinda a Future Goal that I've had for as long as I can remember.<br>
+                Its a web page for a Grilled Cheesy food truck that has Menu options for a build your own as well as a
+                bunch of specialty sandwiches.<br>
+                From the site itself those who want to make reservations for a party can navigate to reservations and
+                fill out the form for me to contact them.<br>
+                Eventuallly it will have a section in the form for them to choose what sandwiches and sides they would
+                like or if they want the full menu used.<br>
+                It will also have a section that fans can share experiances with all those who show intrest in my food
+                truck.
+            </p>
+
+            <a href="https://github.com/meggers1990/who-is-megan.git">About me Page</a>
+            <p>
+                This project is simply just about me and my life html and css layout with some js added for
+                functionality.<br>
+                Just click threw buttons to learn more about me.<br>
+                This project is simular to this professional one before adding React but has more about me sections.
+            </p>
+
+
+            <h2>Projects I completed at Bloomtech:</h2>
+
+            <a href="https://github.com/meggers1990/web-sprint-challenge-build-a-web-api.git">WEB API BUILD</a>
+            <p>
+                In this project, I built a robust API with CRUD functionality for managing projects and actions.<br>
+                I implemented NPM scripts for seamless server execution, consumed environment variables for flexibility,
+                and organized endpoints using Express Routers.<br>
+                Additionally, I created middleware functions for enhanced functionality and leveraged database models
+                for efficient data persistence.<br>
+                The project adheres to best practices and includes comprehensive testing and documentation
+            </p>
+
+            <a href="https://github.com/meggers1990/web-module-project-testing-react.git">TESTING-REACT</a>
+            <p>
+                In this project, I focused on testing React components related to displaying TV show data.<br>
+                I followed a structured approach, starting with project setup and dependency installation.<br>
+                Then, I tested the Episode component by passing in different props and verifying the rendered
+                output.<br>
+                Next, I worked on testing the Show component, including scenarios with mock data and event handling.<br>
+                Lastly, I tackled testing the display component, handling async operations and mocking external
+                modules.<br>
+                I also completed optional stretch goals, adding a testing suite for the episodes component and
+                incorporating features like fetching data for different shows.<br>
+                Overall, the project emphasized thorough testing and effective use of React testing libraries.
+            </p>
+        </section>
+    </div>
+    <!-- Skills content -->
+    <div class="section-container">
+        <section id="skills">
+            <h1>Skills!</h1>
+            
+                <p><b>Front-End Development:</b><br>React<br>Redux<br>HTML5<br>CSS/SASS/Less<br>Responsive Web Design<br>Bootstrap</p>
+
+                <p><b>Back-End Developer:</b><br>Node.js<br>Express.js<br>RESTful API Design<br>JWT/OAuth<br>SQL Databases</p>
+
+                <p><b>Version Control:</b><br>Github<br>Code Reviews</p>
+
+                <p><b>Testing:</b><br>Jest<br>CI/CD</p>
+
+                <p><b>Deployment and Hosting</b><br>Heroku<br>Vercel</p>
+
+                <p><b>Other Skills:</b><br>Time Management<br>Proritization of Task<br>Ability To Learn Quickly<br>Flexibility<br>Collaborate with Team<br>Debugging<br>Empathy<br>Organization</p>
+            
+        </section>
+    </div>
+
+    <!-- Experiance content -->
     <div class="section-container">
         <section id="experiance">
-            <h2>Where Ive worked before making the transition into Tech!</h2>
+            <h1>Where Ive worked before making the transition into Tech!</h1>
             <p>
                 <b>Fast Food Industry</b><br>
                 Little Caesers Arroyo Grande, CA. 2010-2011<br>
@@ -78,101 +171,124 @@
             </p>
 
             <p>
-                During my time in the fast-food industry, I held various roles that contributed to the efficient operation of the establishment.<br>
-                As a opening crew leader at Little Caesars I was responsible for setting up food prep stations and starting ovens and checking inventory.<br>
+                During my time in the fast-food industry, I held various roles that contributed to the efficient
+                operation of the establishment.<br>
+                As a opening crew leader at Little Caesars I was responsible for setting up food prep stations and
+                starting ovens and checking inventory.<br>
                 This included placing orders if inventory was low and making dough for pizza crust.<br>
                 Additionally, I worked in a fast paced establishment and worked well under pressure.
             </p>
 
             <p>
-                In my position as Cashier and deli slicer at Jersey Mikes Subs, I was responsible for slicing meets and cheese for sandwiches and handling tranactions and dishing out the best customer service.<br>
+                In my position as Cashier and deli slicer at Jersey Mikes Subs, I was responsible for slicing meets and
+                cheese for sandwiches and handling tranactions and dishing out the best customer service.<br>
                 I also had been trained for manager after a month of working for Jersey Mikes.
             </p>
-                
+
             <p>
-                Overall, my experience in fast food equipped me with strong multitasking abilities, excellent customer service skills, and the capacity to thrive in a high-paced environment.<br>
-                I learned the importance of teamwork and effective communication to ensure smooth operations and customer satisfaction.
+                Overall, my experience in fast food equipped me with strong multitasking abilities, excellent customer
+                service skills, and the capacity to thrive in a high-paced environment.<br>
+                I learned the importance of teamwork and effective communication to ensure smooth operations and
+                customer satisfaction.
             </p>
 
             <p>
                 <b>In-Home Care Nurse</b><br>
                 Private Clients/Family<br>
-                Pismo Beach, CA. Porterville, CA. Tipton, CA.<br>Randomly
+                Pismo Beach, CA. | Porterville, CA. | Tipton, CA.
             </p>
 
 
             <p>
-                As an In-Home Care Nurse, I provided personalized care and support to individuals in the comfort of their own homes.<br>
-                My responsibilities included administering medications, monitoring vital signs, and assisting with activities of daily living.<br>
-                I demonstrated exceptional attention to detail, empathy, and effective communication skills in order to ensure the well-being and comfort of my clients.
+                As an In-Home Care Nurse, I provided personalized care and support to individuals in the comfort of
+                their own homes.<br>
+                My responsibilities included administering medications, monitoring vital signs, and assisting with
+                activities of daily living.<br>
+                I demonstrated exceptional attention to detail, empathy, and effective communication skills in order to
+                ensure the well-being and comfort of my clients.
             </p>
 
             <p><b>Retail Positions</b></p>
-            
+
             <p>
-                In my roles within the retail industry, I gained valuable experience in customer service and operations.<br>
-                I effectively assisted customers with their inquiries, provided product recommendations, and ensured a positive shopping experience.<br>
-                Additionally, I was responsible for maintaining store cleanliness, restocking shelves, and managing inventory.<br>
-                My time in retail honed my organizational skills, attention to detail, and ability to work efficiently in a fast-paced environment.
+                In my roles within the retail industry, I gained valuable experience in customer service and
+                operations.<br>
+                I effectively assisted customers with their inquiries, provided product recommendations, and ensured a
+                positive shopping experience.<br>
+                Additionally, I was responsible for maintaining store cleanliness, restocking shelves, and managing
+                inventory.<br>
+                My time in retail honed my organizational skills, attention to detail, and ability to work efficiently
+                in a fast-paced environment.
             </p>
 
             <p><b>Hotel Housekeeper</b></p>
-            
+
             <p>
-                As a Housekeeping professional, I was entrusted with maintaining a clean and organized environment for clients.<br>
+                As a Housekeeping professional, I was entrusted with maintaining a clean and organized environment for
+                clients.<br>
                 I performed a range of duties, including dusting, vacuuming, and sanitizing various areas.<br>
-                Through meticulous attention to detail and time management, I consistently exceeded cleanliness standards.<br>
+                Through meticulous attention to detail and time management, I consistently exceeded cleanliness
+                standards.<br>
                 This experience instilled in me a strong sense of responsibility and a keen eye for detail.
             </p>
 
             <p><b>Group Home Support Worker</b></p>
-            
+
             <p>
-                In my role as a Group Home Support Worker, I provided compassionate care and assistance to individuals with specific needs in a group home setting.<br>
-                This involved helping with daily activities, providing emotional support, and ensuring a safe and nurturing environment.<br>
-                Collaborating closely with a team of professionals, I developed strong teamwork, communication, and problem-solving skills, contributing to the overall well-being of the residents.
+                In my role as a Group Home Support Worker, I provided compassionate care and assistance to individuals
+                with specific needs in a group home setting.<br>
+                This involved helping with daily activities, providing emotional support, and ensuring a safe and
+                nurturing environment.<br>
+                Collaborating closely with a team of professionals, I developed strong teamwork, communication, and
+                problem-solving skills, contributing to the overall well-being of the residents.
             </p>
 
-            <p><b>Transition into Web Development</b></p>
-            
-
-            
         </section>
     </div>
 
+    <!-- Hobbies content -->
     <div class="section-container">
         <section id="hobbies">
-            <h2>Things I enjoy in my spare time!</h2>
+            <h1>Things I enjoy in my spare time!</h1>
 
-            <h3>Pour Painting with My Stepdaughter:</h3>
+            <h2>Pour Painting with My Stepdaughter:</h2>
 
             <p>
-                I have a special bond with my stepdaughter, and one of our favorite activities together is pour painting.<br>
-                For those unfamiliar with this art form, it's a delightful blend of acrylic paints, pouring medium, and a touch of silicone, all mixed in a single cup.<br>
-                This colorful concoction is then poured onto a canvas and carefully manipulated by tilting it back and forth. There are numerous techniques, each resulting in its own unique masterpiece.<br>
+                I have a special bond with my stepdaughter, and one of our favorite activities together is pour
+                painting.<br>
+                For those unfamiliar with this art form, it's a delightful blend of acrylic paints, pouring medium, and
+                a touch of silicone, all mixed in a single cup.<br>
+                This colorful concoction is then poured onto a canvas and carefully manipulated by tilting it back and
+                forth.<br>
+                There are numerous techniques, each resulting in its own unique masterpiece.<br>
                 It's a messy affair, but the joy it brings is absolutely worth it!
             </p>
 
-            <h3>Extending a Helping Hand:</h3>
+            <h2>Extending a Helping Hand:</h2>
 
             <p>
                 One of my greatest joys is reaching out to those in need.<br>
                 I believe in the power of a simple act of kindness.<br>
-                It starts with gathering essentials like loaves of bread, chips, and bottled water, using them to prepare a batch of wholesome sandwiches.<br>
+                It starts with gathering essentials like loaves of bread, chips, and bottled water, using them to
+                prepare a batch of wholesome sandwiches.<br>
                 I then head into town, seeking out homeless encampments to distribute these bagged lunches.<br>
-                Additionally, if there are any leftovers from our family dinners, I make it a point to share them with those who could use a warm meal.<br>
-                It's not just about providing sustenance, but also about connecting with fellow human beings in a compassionate and dignified way.
+                Additionally, if there are any leftovers from our family dinners, I make it a point to share them with
+                those who could use a warm meal.<br>
+                It's not just about providing sustenance, but also about connecting with fellow human beings in a
+                compassionate and dignified way.
             </p>
 
-            <h3>Embracing Nature's Beauty:</h3>
+            <h2>Embracing Nature's Beauty:</h2>
 
             <p>
                 Nature, in all its magnificent forms, holds a special place in my heart.<br>
-                Whether it's a scorching day or the heavens open up in a downpour, I find solace and boundless inspiration in its ever-changing beauty.<br>
-                From vibrant sunsets to the tranquil rustling of leaves, every moment in nature is a reminder of the wonders that surround us.
+                Whether it's a scorching day or the heavens open up in a downpour, I find solace and boundless
+                inspiration in its ever-changing beauty.<br>
+                From vibrant sunsets to the tranquil rustling of leaves, every moment in nature is a reminder of the
+                wonders that surround us.
             </p>
 
-            <h3>Unleashing the Power of Code:</h3>
+            <h2>Unleashing the Power of Code:</h2>
 
             <p>
                 Recently, I've been captivated by the world of coding.<br>
@@ -184,149 +300,80 @@
         </section>
     </div>
 
-    <div class="section-container">
-        <section id="projects">
-            <h2>Personal Projects!</h2>
-
-            <a href="https://github.com/meggers1990/Cheesy-Situation.git">Github Repository</a>
-            <p>
-                This Project is mainly HTML and CSS.<br>
-                It's kinda a Future Goal that I've had for as long as I can remember.<br>
-                Its a web page for a Grilled Cheesy food truck that has Menu options for a build your own as well as a bunch of specialty sandwiches.<br>
-                From the site itself those who want to make reservations for a party can navigate to reservations and fill out the form for me to contact them.<br>
-                Eventuallly it will have a section in the form for them to choose what sandwiches and sides they would like or if they want the full menu used.<br>
-                It will also have a section that fans can share experiances with all those who show intrest in my food truck.
-            </p>
-
-            <a href="https://github.com/meggers1990/who-is-megan.git">About me Page</a>
-            <p>
-                This project is simply just about me and my life html and css layout with some js added for functionality.<br>
-                Just click threw buttons to learn more about me.<br>
-                This project is simular to this professional one before adding React but has more about me sections.
-            </p>
-
-
-            <h2>Projects I completed at Bloomtech:</h2>
-
-            <a href="https://github.com/meggers1990/web-sprint-challenge-build-a-web-api.git">WEB API BUILD</a>
-            <p>
-                In this project, I built a robust API with CRUD functionality for managing projects and actions.<br>
-                I implemented NPM scripts for seamless server execution, consumed environment variables for flexibility, and organized endpoints using Express Routers.<br>
-                Additionally, I created middleware functions for enhanced functionality and leveraged database models for efficient data persistence.<br>
-                The project adheres to best practices and includes comprehensive testing and documentation
-            </p>
-
-            <a href="https://github.com/meggers1990/web-module-project-testing-react.git">TESTING-REACT</a>
-            <p>
-                In this project, I focused on testing React components related to displaying TV show data.<br>
-                I followed a structured approach, starting with project setup and dependency installation.<br>
-                Then, I tested the Episode component by passing in different props and verifying the rendered output.<br>
-                Next, I worked on testing the Show component, including scenarios with mock data and event handling.<br>
-                Lastly, I tackled testing the display component, handling async operations and mocking external modules.<br>
-                I also completed optional stretch goals, adding a testing suite for the episodes component and incorporating features like fetching data for different shows.<br>
-                Overall, the project emphasized thorough testing and effective use of React testing libraries.
-            </p>
-        </section>
-    </div>
-
-    <div class="section-container">
-        <section id="skills">
-            <h2>Skills!</h2>
-            <ul>
-                <p><b>Front-End Development:</b></p>
-                <li>React</li>
-                <li>Redux</li>
-                <li>HTML5</li>
-                <li>CSS/SASS/Less</li>
-                <li>Responsive Web Design</li>
-                <li>Bootstrap</li>
-
-                <p><b>Back-End Developer:</b></p>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>RESTful API Design</li>
-                <li>JWT/OAuth</li>
-                <li>SQL Databases</li>
-                
-                <p><b>Version Control:</b></p>
-                <li>Github</li>
-                <li>Code Reviews</li>
-                
-                <p><b>Testing:</b></p>
-                <li>Jest</li>
-                <li>CI/CD</li>
-                
-                <p><b>Deployment and Hosting</b></p>
-                <li>Heroku</li>
-                <li>Vercel</li>
-
-                <p><b>Other Skills:</b></p>
-                <li>Time Management</li>
-                <li>Proritization of Task</li>
-                <li>Ability To Learn Quickly</li>
-                <li>Flexibility</li>
-                <li>Collaborate with Team</li>
-                <li>Debugging</li>
-                <li>Empathy</li>
-                <li>Organization</li>
-            </ul>
-        </section>
-    </div>
-    
-    
+    <!-- Dream Job content -->
     <div class="section-container">
         <section id="dreamJob">
             <h2>Where I wanna work!</h2>
             <p>
-                I am deeply passionate about embarking on a career in technology, and I am eager to align myself with companies that share my values of continuous growth and learning.<br>
-                My immediate goal is to secure an entry-level position within a forward-thinking organization that places a strong emphasis on career progression and offers ample opportunities for skill development.
+                I am deeply passionate about embarking on a career in technology, and I am eager to align myself with
+                companies that share my values of continuous growth and learning.<br>
+                My immediate goal is to secure an entry-level position within a forward-thinking organization that
+                places a strong emphasis on career progression and offers ample opportunities for skill development.
             </p>
             <p>
-                After gaining a solid foundation and honing my skills for about a year, I aspire to take on a role as a learner's assistant at BloomTech.<br>
-                This role speaks to my desire to give back and support others in their journey into the world of development.<br>
-                Guiding and mentoring fellow enthusiasts is a fulfilling prospect that I believe will not only contribute to their growth but also enhance my own understanding of the field.
+                After gaining a solid foundation and honing my skills for about a year, I aspire to take on a role as a
+                learner's assistant at BloomTech.<br>
+                This role speaks to my desire to give back and support others in their journey into the world of
+                development.<br>
+                Guiding and mentoring fellow enthusiasts is a fulfilling prospect that I believe will not only
+                contribute to their growth but also enhance my own understanding of the field.
             </p>
             <p>
                 Looking ahead, I am excited to expand my horizons and explore new technologies.<br>
                 Within the next year, I plan to immerse myself in learning cutting-edge tools and languages.<br>
-                My ultimate aspiration is to contribute to groundbreaking projects, and I see organizations like Tesla, at the forefront of innovation, as the perfect environment to bring my vision to life.<br>
-                The intersection of technology and artificial intelligence is a realm I am particularly drawn to, and I am driven to play a pivotal role in shaping the future of this dynamic field.
+                My ultimate aspiration is to contribute to groundbreaking projects, and I see organizations like Tesla,
+                at the forefront of innovation, as the perfect environment to bring my vision to life.<br>
+                The intersection of technology and artificial intelligence is a realm I am particularly drawn to, and I
+                am driven to play a pivotal role in shaping the future of this dynamic field.
             </p>
             <p>
-                In this journey, I am committed to continuous self-improvement and am enthusiastic about the challenges and opportunities that lie ahead.<br>
-                I look forward to being a part of companies that not only value individual growth but also foster a collaborative and innovative work culture
+                In this journey, I am committed to continuous self-improvement and am enthusiastic about the challenges
+                and opportunities that lie ahead.<br>
+                I look forward to being a part of companies that not only value individual growth but also foster a
+                collaborative and innovative work culture
             </p>
         </section>
     </div>
-
-    <div class="section-container">    
+    <!-- Future content -->
+    <div class="section-container">
         <section id="future">
             <h2>Whats In My Distant future Plans!!</h2>
             <p>
                 As I look ahead to the distant future, my drive to make a difference burns brighter than ever.<br>
-                I'm dedicated to being a guiding force for young adults struggling with addiction and homelessness, offering them not just a helping hand, but a chance at a future filled with recovery, stability, and hope.<br>
-                In the years to come, I see the birth of an organization that doesn't just provide immediate aid, but empowers with purpose.<br>
-                This means giving them more than just jobs, but the skills they need to thrive, creating a strong foundation for their professional journeys.<br>
-                I'm also committed to creating programs that help the homeless transition into homes of their own, marking a significant step towards independence.<br>
+                I'm dedicated to being a guiding force for young adults struggling with addiction and homelessness,
+                offering them not just a helping hand, but a chance at a future filled with recovery, stability, and
+                hope.<br>
+                In the years to come, I see the birth of an organization that doesn't just provide immediate aid, but
+                empowers with purpose.<br>
+                This means giving them more than just jobs, but the skills they need to thrive, creating a strong
+                foundation for their professional journeys.<br>
+                I'm also committed to creating programs that help the homeless transition into homes of their own,
+                marking a significant step towards independence.<br>
                 My vision extends beyond practical assistance.<br>
                 I long for a world where compassion outweighs judgment, and understanding replaces stereotypes.<br>
-                Through open conversations, breaking down biases, and advocating for widespread education, I hope to spark a movement towards a society that actively uplifts those in need.<br>               
-                In this future, I envision a collective effort against homelessness, uniting people from all walks of life.<br>
-                Together, we'll share stories of transformation, showcasing the incredible potential within each individual.<br>
-                This isn't just about providing relief; it's about planting the seeds for a sustained, inclusive society, where homelessness is but a distant memory.
+                Through open conversations, breaking down biases, and advocating for widespread education, I hope to
+                spark a movement towards a society that actively uplifts those in need.<br>
+                In this future, I envision a collective effort against homelessness, uniting people from all walks of
+                life.<br>
+                Together, we'll share stories of transformation, showcasing the incredible potential within each
+                individual.<br>
+                This isn't just about providing relief; it's about planting the seeds for a sustained, inclusive
+                society, where homelessness is but a distant memory.
             </p>
         </section>
     </div>
-
+    <!-- Comment section -->
     <div id="comment-section">
-        <h2>Comments</h2>
+        <h3>Comments</h3>
+        <!-- Comment section content -->
         <div id="comments"></div>
         <textarea id="new-comment" placeholder="Write your comment here"></textarea>
         <button onclick="addComment()">Submit</button>
         <button onclick="clearComments()">Clear</button>
     </div>
-
+    <!-- Footer -->
     <footer>
+        <!-- Footer content -->
         <button onclick="scrollToSection('aboutMe')">About Me!</button>
         <button onclick="scrollToSection('education')">Education!</button>
         <button onclick="scrollToSection('experiance')">Experiance!</button>
@@ -338,7 +385,8 @@
 
         <p>&copy; 2023 Meggers1990</p>
     </footer>
-
+    <!-- Linking to external JavaScript file -->
     <script src="script.js"></script>
 </body>
+
 </html>
